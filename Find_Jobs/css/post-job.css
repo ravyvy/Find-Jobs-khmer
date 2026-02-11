@@ -1,0 +1,299 @@
+/* ===== Post Job Page Styles ===== */
+.post-job-layout {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 0 80px;
+}
+
+.post-form-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+}
+
+.post-form-card h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.post-form-card>p {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group-post {
+    margin-bottom: 20px;
+}
+
+.form-group-post label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+}
+
+.form-group-post label .required {
+    color: #ef4444;
+    margin-left: 2px;
+}
+
+.form-group-post input,
+.form-group-post select,
+.form-group-post textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-light);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    font-family: var(--font);
+}
+
+.form-group-post input:focus,
+.form-group-post select:focus,
+.form-group-post textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    background: white;
+}
+
+.form-group-post textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-group-post .error-msg {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    display: none;
+}
+
+.form-group-post.has-error input,
+.form-group-post.has-error select,
+.form-group-post.has-error textarea {
+    border-color: #ef4444;
+}
+
+.form-group-post.has-error .error-msg {
+    display: block;
+}
+
+.form-group-post .hint {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+.tag-input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-light);
+    min-height: 46px;
+    cursor: text;
+    transition: var(--transition);
+}
+
+.tag-input-wrapper:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    background: white;
+}
+
+.tag-input-wrapper .tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.tag-pill .remove-tag {
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.tag-pill .remove-tag:hover {
+    opacity: 1;
+    color: #ef4444;
+}
+
+.tag-input-wrapper input {
+    border: none !important;
+    padding: 4px !important;
+    background: none !important;
+    box-shadow: none !important;
+    flex: 1;
+    min-width: 100px;
+    font-size: 0.9rem;
+}
+
+.btn-post-job {
+    width: 100%;
+    background: var(--gradient);
+    color: white;
+    padding: 16px;
+    border-radius: var(--radius);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.btn-post-job:hover {
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+    transform: translateY(-2px);
+}
+
+.my-posts-section {
+    margin-top: 48px;
+}
+
+.my-posts-section h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.my-posts-section h2 .count-badge {
+    background: var(--gradient);
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+}
+
+.my-posts-empty {
+    text-align: center;
+    padding: 48px 20px;
+    background: var(--bg-card);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+}
+
+.my-posts-empty i {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.user-job-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.user-job-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.user-job-card .badge-user {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(135deg, #34d399, #10b981);
+    color: white;
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+}
+
+.user-job-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.user-job-card .company-line {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    margin-bottom: 10px;
+}
+
+.user-job-card .meta-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.user-job-card .meta-line span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.user-job-card .meta-line span i {
+    color: var(--primary);
+    font-size: 0.75rem;
+}
+
+.btn-delete-post {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: #fee2e2;
+    color: #dc2626;
+    border: none;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-delete-post:hover {
+    background: #dc2626;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .post-form-card {
+        padding: 24px;
+    }
+}

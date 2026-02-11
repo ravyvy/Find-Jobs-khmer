@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#6023;&#6086;&#6035;&#6017;&#608 ณ&#6014;&#6067; &#8211; JobKH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Khmer:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">JK</div>
+                <span>JobKH</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">&#6033;&#6086;&#6038;&#6096;&#6042;&#6026;&#6078;&#6040;</a>
+                <a
+                    href="jobs.html">&#6047;&#6098;&#6044;&#6082;&#6020;&#6042;&#6016;&#6016;&#6070;&#6042;&#6020;&#6070;&#6042;</a>
+                <a
+                    href="post-job.html">&#6036;&#6020;&#6098;&#6048;&#6084;&#6087;&#6016;&#6070;&#6042;&#6020;&#6070;&#6042;</a>
+                <a href="contact.html">&#6033;&#6086;&#6035;&#6070;&#6016;&#6091;&#6033;&#6086;&#6035;&#6020;</a>
+            </div>
+            <button class="hamburger"><span></span><span></span><span></span></button>
+        </div>
+        <div class="nav-overlay"></div>
+    </nav>
+
+    <section class="auth-layout">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>បញ្ចូលគណនី</h1>
+                <p>បញ្ចូលអ៊ីមែលនិងពាក្យសម្ងាត់របស់អ្នក</p>
+            </div>
+
+            <div class="error-message" id="login-error"></div>
+
+            <form class="auth-form" id="login-form">
+                <div class="form-group">
+                    <label>អ៊ីមែល</label>
+                    <input type="text" id="username"
+                        placeholder="បញ្ចូលអ៊ីមែល"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label>ពាក្យសម្ងាត់</label>
+                    <input type="password" id="password"
+                        placeholder="បញ្ចូលពាក្យសម្ងាត់"
+                        required>
+                </div>
+                <button type="submit" class="btn-auth">បញ្ចូលគណនី</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>មានគណនីរួចរាល់?
+                    <a
+                        href="register.html">បង្កើតគណនី</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if already logged in
+            if (Auth.getSession()) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const form = document.getElementById('login-form');
+            const errorMsg = document.getElementById('login-error');
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const u = document.getElementById('username').value.trim();
+                const p = document.getElementById('password').value.trim();
+
+                const result = Auth.login(u, p);
+                if (result.success) {
+                    // Check for redirect param
+                    const params = new URLSearchParams(window.location.search);
+                    const redirect = params.get('redirect') || 'index.html';
+                    window.location.href = redirect;
+                } else {
+                    errorMsg.textContent = result.message;
+                    errorMsg.style.display = 'block';
+                }
+            });
+
+            // Clear error on input
+            document.querySelectorAll('input').forEach(i => {
+                i.addEventListener('input', () => errorMsg.style.display = 'none');
+            });
+        });
+    </script>
+</body>
+
+</html>

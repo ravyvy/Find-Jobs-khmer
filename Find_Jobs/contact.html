@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ទាក់ទងមកកាន់ JobKH។ យើងនៅទីនេះដើម្បីជួយអ្នកក្នុងការស្វែងរកការងារ ឬតម្រូវការនិយោជក។">
+    <title>ទំនាក់ទំនងយើង – JobKH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Khmer:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">JK</div>
+                <span>JobKH</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">ទំព័រដើម</a>
+                <a href="jobs.html">ស្វែងរកការងារ</a>
+                <a href="job-detail.html?id=1">ព័ត៌មានការងារ</a>
+                <a href="post-job.html">បង្ហោះការងារ</a>
+                <a href="contact.html" class="active">ទំនាក់ទំនង</a>
+                <div class="nav-cta">
+                    <a href="jobs.html">បង្ហោះការងារ</a>
+                </div>
+            </div>
+            <button class="hamburger" aria-label="បើកម៉ឺនុយ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav-overlay"></div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>ទំនាក់ទំនងយើង</h1>
+            <p>យើងរីករាយក្នុងការទទួលដំណឹងពីអ្នក។ ទាក់ទងមកក្រុមការងាររបស់យើង។</p>
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> ទំព័រដើម</a>
+                <span>/</span>
+                <span>ទំនាក់ទំនង</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>ទាក់ទងមកយើង</h2>
+                    <p>មានសំណួរអំពីវេទិការបស់យើង? កំពុងស្វែងរកបង្ហោះការងារ ឬត្រូវការជំនួយក្នុងការស្វែងរកការងារ?
+                        យើងនៅទីនេះដើម្បីជួយ! ទាក់ទងមកយើងតាមវិធីសាស្រ្តខាងក្រោម។</p>
+
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>ការិយាល័យរបស់យើង</h4>
+                            <p>#១២៣ ផ្លូវ ២៤០ សង្កាត់ចតុមុខ<br>ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ កម្ពុជា</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>ទូរស័ព្ទ</h4>
+                            <p>+៨៥៥ ២៣ ៤៥៦ ៧៨៩<br>+៨៥៥ ១២ ៣៤៥ ៦៧៨</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>អ៊ីមែល</h4>
+                            <p>info@jobkh.com<br>support@jobkh.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>ម៉ោងធ្វើការ</h4>
+                            <p>ច័ន្ទ – សុក្រ: ៨:០០ ព្រឹក – ៥:០០ ល្ងាច<br>សៅរ៍: ៨:០០ ព្រឹក – ១២:០០ ថ្ងៃត្រង់</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3>ផ្ញើសារមកយើង</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">ឈ្មោះពេញ</label>
+                            <input type="text" id="name" placeholder="បញ្ចូលឈ្មោះពេញរបស់អ្នក">
+                            <div class="error-text">សូមបញ្ចូលឈ្មោះពេញរបស់អ្នក</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">អាសយដ្ឋានអ៊ីមែល</label>
+                            <input type="email" id="email" placeholder="បញ្ចូលអាសយដ្ឋានអ៊ីមែលរបស់អ្នក">
+                            <div class="error-text">សូមបញ្ចូលអាសយដ្ឋានអ៊ីមែលដែលត្រឹមត្រូវ</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">ប្រធានបទ</label>
+                            <input type="text" id="subject" placeholder="នេះគឺអំពីអ្វី?">
+                            <div class="error-text">សូមបញ្ចូលប្រធានបទ</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">សារ</label>
+                            <textarea id="message" placeholder="វាយសាររបស់អ្នកនៅទីនេះ..."></textarea>
+                            <div class="error-text">សារត្រូវមានយ៉ាងហោចណាស់ ១០ តួអក្សរ</div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> ផ្ញើសារ
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map-section">
+        <div class="container">
+            <h2>ស្វែងរកយើងនៅលើផែនទី</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125422.78482578454!2d104.84804543218788!3d11.579660628498965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="ទីតាំងការិយាល័យ JobKH">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">JK</div>
+                        <span>JobKH</span>
+                    </a>
+                    <p>វេទិកាការងារកំពូលនៅកម្ពុជា ភ្ជាប់អ្នកជំនាញមានទេពកោសល្យជាមួយនិយោជកល្បីទូទាំងព្រះរាជាណាចក្រ។</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>សម្រាប់អ្នកស្វែងរកការងារ</h4>
+                    <a href="jobs.html">រុករកការងារ</a>
+                    <a href="#">ដំបូន្មានអាជីព</a>
+                    <a href="#">បង្កើតប្រវត្តិរូប</a>
+                    <a href="#">មគ្គុទ្ទេសក៍ប្រាក់ខែ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>សម្រាប់និយោជក</h4>
+                    <a href="#">បង្ហោះការងារ</a>
+                    <a href="#">រុករកបេក្ខជន</a>
+                    <a href="#">គម្រោងតម្លៃ</a>
+                    <a href="#">មជ្ឈមណ្ឌលនិយោជក</a>
+                </div>
+                <div class="footer-col">
+                    <h4>ក្រុមហ៊ុន</h4>
+                    <a href="#">អំពីយើង</a>
+                    <a href="contact.html">ទំនាក់ទំនង</a>
+                    <a href="#">គោលការណ៍ភាពឯកជន</a>
+                    <a href="#">លក្ខខណ្ឌសេវាកម្ម</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; ២០២៦ JobKH។ រក្សាសិទ្ធិគ្រប់យ៉ាង។ បង្កើតដោយ ❤️ នៅកម្ពុជា។
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Popup -->
+    <div class="popup-overlay" id="success-popup">
+        <div class="popup">
+            <div class="icon"><i class="fas fa-check"></i></div>
+            <h3>សារត្រូវបានផ្ញើហើយ!</h3>
+            <p>សូមអរគុណសម្រាប់ការទាក់ទង។ យើងនឹងឆ្លើយតបក្នុងរយៈពេល ២៤ ម៉ោង។</p>
+            <button class="btn-close-popup" onclick="closePopup()">យល់ហើយ!</button>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="រមូឡើងលើ">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
