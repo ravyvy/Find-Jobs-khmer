@@ -67,7 +67,7 @@ function initPostJobForm() {
         });
 
         if (!valid) {
-            alert('សូមបំពេញព័ត៌មានដែលចាំបាច់ទាំងអស់អោយបានត្រឹមត្រូវ។ (Please fix the errors in the form)');
+            alert('Please fill in all required fields correctly.');
             return;
         }
 
@@ -88,7 +88,7 @@ function initPostJobForm() {
             category: document.getElementById('pj-category').value,
             experience: document.getElementById('pj-experience').value,
             tags: [...tagsList],
-            posted: new Date().toLocaleDateString('km-KH'),
+            posted: new Date().toLocaleDateString('en-US'),
             description: document.getElementById('pj-description').value.trim(),
             requirements: (document.getElementById('pj-requirements').value.trim() || '').split('\n').filter(l => l.trim()),
             benefits: (document.getElementById('pj-benefits').value.trim() || '').split('\n').filter(l => l.trim()),
@@ -131,12 +131,12 @@ function renderMyPosts() {
     if (countEl) countEl.textContent = posts.length;
 
     if (!posts.length) {
-        container.innerHTML = '<div class="my-posts-empty"><i class="fas fa-inbox"></i><p>\u1798\u17B7\u1793\u1791\u17B6\u1793\u17CB\u1798\u17B6\u1793\u1780\u17B6\u179A\u1784\u17B6\u179A\u178A\u17C2\u179B\u1794\u17B6\u1793\u1794\u17D2\u179A\u1780\u17B6\u179F\u1793\u17C5\u17A1\u17BE\u1799\u1791\u17C1</p></div>';
+        container.innerHTML = '<div class="my-posts-empty"><i class="fas fa-inbox"></i><p>No jobs posted yet.</p></div>';
         return;
     }
     container.innerHTML = posts.map(job => `
     <div class="user-job-card">
-      <span class="badge-user">\u1794\u17D2\u179A\u1780\u17B6\u179F\u179A\u1794\u179F\u17CB\u17A2\u17D2\u1793\u1780</span>
+      <span class="badge-user">Your Post</span>
       <h3>${job.title}</h3>
       <div class="company-line"><i class="far fa-building"></i> ${job.company}</div>
       <div class="meta-line">
@@ -145,12 +145,12 @@ function renderMyPosts() {
         <span><i class="fas fa-dollar-sign"></i> ${job.salary}</span>
         <span><i class="fas fa-calendar"></i> ${job.posted}</span>
       </div>
-      <button class="btn-delete-post" onclick="deletePost('${job.id}')"><i class="fas fa-trash-alt"></i> \u179B\u17BB\u1794</button>
+      <button class="btn-delete-post" onclick="deletePost('${job.id}')"><i class="fas fa-trash-alt"></i> Delete</button>
     </div>`).join('');
 }
 
 function deletePost(id) {
-    if (!confirm('\u178F\u17BE\u17A2\u17D2\u1793\u1780\u1796\u17B7\u178F\u1787\u17B6\u1785\u1784\u17CB\u179B\u17BB\u1794\u1780\u17B6\u179A\u1784\u17B6\u179A\u1793\u17C1\u17C7?')) return;
+    if (!confirm('Are you sure you want to delete this job post?')) return;
     saveUserPosts(getUserPosts().filter(p => p.id !== id));
     renderMyPosts();
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="en">
 
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1281692154212689"
         crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="បង្ហោះការងារថ្មីនៅលើ JobKH។ បង្កើតប្រកាសការងាររបស់អ្នកដោយឥតគិតថ្លៃ។">
-    <title>បង្ហោះការងារ – JobKH</title>
+    <meta name="description" content="Post a new job on JobKH. Create your job advertisement for free.">
+    <title>Post a Job – JobKH</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -27,15 +27,15 @@
                 <span>JobKH</span>
             </a>
             <div class="nav-links">
-                <a href="index.html">ទំព័រដើម</a>
-                <a href="jobs.html">ស្វែងរកការងារ</a>
-                <a href="post-job.html" class="active">បង្ហោះការងារ</a>
-                <a href="contact.html">ទំនាក់ទំនង</a>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Find Jobs</a>
+                <a href="post-job.html" class="active">Post a Job</a>
+                <a href="contact.html">Contact</a>
                 <div class="nav-cta">
-                    <a href="post-job.html">បង្ហោះការងារ</a>
+                    <a href="post-job.html">Post a Job</a>
                 </div>
             </div>
-            <button class="hamburger" aria-label="បើកម៉ឺនុយ">
+            <button class="hamburger" aria-label="Open Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -47,12 +47,12 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>បង្ហោះការងារថ្មី</h1>
-            <p>បង្កើតប្រកាសការងារ ហើយទាក់ទាញបេក្ខជនដ៏ល្អបំផុត</p>
+            <h1>Post a New Job</h1>
+            <p>Create a job post and attract the best candidates</p>
             <div class="breadcrumb">
-                <a href="index.html"><i class="fas fa-home"></i> ទំព័រដើម</a>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
                 <span>/</span>
-                <span>បង្ហោះការងារ</span>
+                <span>Post a Job</span>
             </div>
         </div>
     </section>
@@ -62,150 +62,148 @@
         <div class="container">
             <div class="post-job-layout">
                 <div class="post-form-card">
-                    <h2><i class="fas fa-plus-circle" style="color:var(--primary)"></i> បង្កើតប្រកាសការងារ</h2>
-                    <p>បំពេញព័ត៌មានខាងក្រោមដើម្បីបង្ហោះការងារថ្មី។ វាលដែលមាន <span style="color:#ef4444">*</span>
-                        ត្រូវតែបំពេញ។</p>
+                    <h2><i class="fas fa-plus-circle" style="color:var(--primary)"></i> Create Job Post</h2>
+                    <p>Fill in the information below to post a new job. Fields with <span style="color:#ef4444">*</span>
+                        are required.</p>
 
                     <form id="post-job-form">
                         <!-- Row 1: Title & Company -->
                         <div class="form-row">
                             <div class="form-group-post">
-                                <label>មុខតំណែង <span class="required">*</span></label>
-                                <input type="text" id="pj-title" placeholder="ឧ. អ្នកអភិវឌ្ឍន៍ Frontend">
-                                <div class="error-msg">សូមបញ្ចូលមុខតំណែង</div>
+                                <label>Job Title <span class="required">*</span></label>
+                                <input type="text" id="pj-title" placeholder="e.g. Frontend Developer">
+                                <div class="error-msg">Please enter a job title</div>
                             </div>
                             <div class="form-group-post">
-                                <label>ឈ្មោះក្រុមហ៊ុន <span class="required">*</span></label>
-                                <input type="text" id="pj-company" placeholder="ឧ. TechCam Solutions">
-                                <div class="error-msg">សូមបញ្ចូលឈ្មោះក្រុមហ៊ុន</div>
+                                <label>Company Name <span class="required">*</span></label>
+                                <input type="text" id="pj-company" placeholder="e.g. TechCam Solutions">
+                                <div class="error-msg">Please enter a company name</div>
                             </div>
                         </div>
 
                         <!-- Row 2: Location & Category -->
                         <div class="form-row">
                             <div class="form-group-post">
-                                <label>ទីតាំង <span class="required">*</span></label>
+                                <label>Location <span class="required">*</span></label>
                                 <select id="pj-location">
-                                    <option value="">ជ្រើសរើសទីតាំង</option>
-                                    <option value="Phnom Penh">ភ្នំពេញ</option>
-                                    <option value="Siem Reap">សៀមរាប</option>
-                                    <option value="Sihanoukville">ព្រះសីហនុ</option>
-                                    <option value="Battambang">បាត់ដំបង</option>
+                                    <option value="">Select Location</option>
+                                    <option value="Phnom Penh">Phnom Penh</option>
+                                    <option value="Siem Reap">Siem Reap</option>
+                                    <option value="Sihanoukville">Sihanoukville</option>
+                                    <option value="Battambang">Battambang</option>
                                 </select>
-                                <div class="error-msg">សូមជ្រើសរើសទីតាំង</div>
+                                <div class="error-msg">Please select a location</div>
                             </div>
                             <div class="form-group-post">
-                                <label>ប្រភេទការងារ <span class="required">*</span></label>
+                                <label>Job Category <span class="required">*</span></label>
                                 <select id="pj-category">
-                                    <option value="">ជ្រើសរើសប្រភេទ</option>
-                                    <option value="IT & Software">ព័ត៌មានវិទ្យា & កម្មវិធី</option>
-                                    <option value="Marketing">ទីផ្សារ</option>
-                                    <option value="Accounting">គណនេយ្យ</option>
-                                    <option value="Banking">ធនាគារ</option>
-                                    <option value="Design">ការរចនា</option>
-                                    <option value="Engineering">វិស្វកម្ម</option>
+                                    <option value="">Select Category</option>
+                                    <option value="IT & Software">IT & Software</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Accounting">Accounting</option>
+                                    <option value="Banking">Banking</option>
+                                    <option value="Design">Design</option>
+                                    <option value="Engineering">Engineering</option>
                                 </select>
-                                <div class="error-msg">សូមជ្រើសរើសប្រភេទ</div>
+                                <div class="error-msg">Please select a category</div>
                             </div>
                         </div>
 
                         <!-- Row 3: Job Type & Experience -->
                         <div class="form-row">
                             <div class="form-group-post">
-                                <label>ប្រភេទម៉ោងការងារ <span class="required">*</span></label>
+                                <label>Job Schedule Type <span class="required">*</span></label>
                                 <select id="pj-type">
-                                    <option value="">ជ្រើសរើសប្រភេទ</option>
-                                    <option value="Full-time">ពេញម៉ោង</option>
-                                    <option value="Part-time">ក្រៅម៉ោង</option>
-                                    <option value="Contract">កិច្ចសន្យា</option>
+                                    <option value="">Select Type</option>
+                                    <option value="Full-time">Full-time</option>
+                                    <option value="Part-time">Part-time</option>
+                                    <option value="Contract">Contract</option>
                                 </select>
-                                <div class="error-msg">សូមជ្រើសរើសប្រភេទម៉ោងការងារ</div>
+                                <div class="error-msg">Please select a job type</div>
                             </div>
                             <div class="form-group-post">
-                                <label>កម្រិតបទពិសោធន៍ <span class="required">*</span></label>
+                                <label>Experience Level <span class="required">*</span></label>
                                 <select id="pj-experience">
-                                    <option value="">ជ្រើសរើសកម្រិត</option>
-                                    <option value="Entry-level">កម្រិតចាប់ផ្តើម</option>
-                                    <option value="Mid-level">កម្រិតមធ្យម</option>
-                                    <option value="Senior">កម្រិតជាន់ខ្ពស់</option>
+                                    <option value="">Select Level</option>
+                                    <option value="Entry-level">Entry-level</option>
+                                    <option value="Mid-level">Mid-level</option>
+                                    <option value="Senior">Senior</option>
                                 </select>
-                                <div class="error-msg">សូមជ្រើសរើសកម្រិតបទពិសោធន៍</div>
+                                <div class="error-msg">Please select an experience level</div>
                             </div>
                         </div>
 
                         <!-- Row 4: Salary -->
                         <div class="form-row">
                             <div class="form-group-post">
-                                <label>ប្រាក់ខែអប្បបរមា ($)</label>
-                                <input type="number" id="pj-salary-min" placeholder="ឧ. ៨០០" min="0">
+                                <label>Min Salary ($)</label>
+                                <input type="number" id="pj-salary-min" placeholder="e.g. 800" min="0">
                             </div>
                             <div class="form-group-post">
-                                <label>ប្រាក់ខែអតិបរមា ($)</label>
-                                <input type="number" id="pj-salary-max" placeholder="ឧ. ១៥០០" min="0">
+                                <label>Max Salary ($)</label>
+                                <input type="number" id="pj-salary-max" placeholder="e.g. 1500" min="0">
                             </div>
                         </div>
 
                         <!-- Tags -->
                         <div class="form-group-post">
-                            <label>ស្លាក (Tags)</label>
+                            <label>Tags</label>
                             <div class="tag-input-wrapper" id="tag-wrapper">
-                                <input type="text" id="pj-tags-input" placeholder="វាយ Enter ដើម្បីបន្ថែម">
+                                <input type="text" id="pj-tags-input" placeholder="Press Enter to add">
                             </div>
-                            <div class="hint">វាយ Enter ដើម្បីបន្ថែមស្លាកថ្មី (យ៉ាងហោចណាស់ ១ និងច្រើនបំផុត ៥)</div>
+                            <div class="hint">Press Enter to add a new tag (min 1, max 5)</div>
                         </div>
 
                         <!-- Description -->
                         <div class="form-group-post">
-                            <label>ការពិពណ៌នាការងារ <span class="required">*</span></label>
-                            <textarea id="pj-description"
-                                placeholder="សរសេរការពិពណ៌នាលម្អិតអំពីការងារនៅទីនេះ..."></textarea>
-                            <div class="error-msg">សូមបញ្ចូលការពិពណ៌នាការងារ (យ៉ាងហោចណាស់ ២០ តួអក្សរ)</div>
+                            <label>Job Description <span class="required">*</span></label>
+                            <textarea id="pj-description" placeholder="Describe the job details here..."></textarea>
+                            <div class="error-msg">Please enter a job description (at least 20 characters)</div>
                         </div>
 
                         <!-- Requirements -->
                         <div class="form-group-post">
-                            <label>តម្រូវការការងារ</label>
+                            <label>Job Requirements</label>
                             <textarea id="pj-requirements"
-                                placeholder="រាយបញ្ជីតម្រូវការការងារនីមួយៗក្នុងបន្ទាត់ថ្មី..."></textarea>
-                            <div class="hint">រាយបញ្ជីតម្រូវការក្នុងបន្ទាត់ថ្មី</div>
+                                placeholder="List job requirements on new lines..."></textarea>
+                            <div class="hint">List requirements on new lines</div>
                         </div>
 
                         <!-- Benefits -->
                         <div class="form-group-post">
-                            <label>អត្ថប្រយោជន៍</label>
-                            <textarea id="pj-benefits"
-                                placeholder="រាយបញ្ជីអត្ថប្រយោជន៍នានាក្នុងបន្ទាត់ថ្មី..."></textarea>
+                            <label>Benefits</label>
+                            <textarea id="pj-benefits" placeholder="List benefits on new lines..."></textarea>
                         </div>
 
                         <!-- Company Overview -->
                         <div class="form-group-post">
-                            <label>ទិដ្ឋភាពទូទៅនៃក្រុមហ៊ុន</label>
-                            <textarea id="pj-company-overview" placeholder="សរសេរអំពីក្រុមហ៊ុនរបស់អ្នក..."></textarea>
+                            <label>Company Overview</label>
+                            <textarea id="pj-company-overview" placeholder="Tell us about your company..."></textarea>
                         </div>
 
                         <!-- Contact Information -->
                         <div class="form-row">
                             <div class="form-group-post">
-                                <label>លេខទូរស័ព្ទ <span class="required">*</span></label>
-                                <input type="tel" id="pj-phone" placeholder="ឧ. 012 345 678">
-                                <div class="error-msg">សូមបញ្ចូលលេខទូរស័ព្ទ</div>
+                                <label>Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="pj-phone" placeholder="e.g. 012 345 678">
+                                <div class="error-msg">Please enter a phone number</div>
                             </div>
                             <div class="form-group-post">
-                                <label>តេឡេក្រាម (Telegram)</label>
-                                <input type="text" id="pj-telegram" placeholder="ឧ. @username ឬលេខទូរស័ព្ទ">
+                                <label>Telegram</label>
+                                <input type="text" id="pj-telegram" placeholder="e.g. @username or phone number">
                             </div>
                         </div>
 
                         <button type="submit" class="btn-post-job">
-                            <i class="fas fa-paper-plane"></i> បង្ហោះការងារ
+                            <i class="fas fa-paper-plane"></i> Post Job
                         </button>
                     </form>
                 </div>
 
                 <!-- My Posted Jobs -->
                 <div class="my-posts-section">
-                    <h2><i class="fas fa-briefcase" style="color:var(--primary)"></i> ការងាររបស់ខ្ញុំ <span
-                            class="count-badge" id="my-posts-count">0</span></h2>
+                    <h2><i class="fas fa-briefcase" style="color:var(--primary)"></i> My Posts <span class="count-badge"
+                            id="my-posts-count">0</span></h2>
                     <div id="my-posts-list">
                         <!-- Rendered by JS -->
                     </div>
@@ -241,7 +239,8 @@
                         <div class="logo-icon">JK</div>
                         <span>JobKH</span>
                     </a>
-                    <p>វេទិកាការងារកំពូលនៅកម្ពុជា ភ្ជាប់អ្នកជំនាញមានទេពកោសល្យជាមួយនិយោជកល្បីទូទាំងព្រះរាជាណាចក្រ។</p>
+                    <p>Top job platform in Cambodia, connecting talented professionals with top employers across the
+                        Kingdom.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -250,29 +249,29 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>សម្រាប់អ្នកស្វែងរកការងារ</h4>
-                    <a href="jobs.html">រុករកការងារ</a>
-                    <a href="#">ដំបូន្មានអាជីព</a>
-                    <a href="#">បង្កើតប្រវត្តិរូប</a>
-                    <a href="#">មគ្គុទ្ទេសក៍ប្រាក់ខែ</a>
+                    <h4>For Job Seekers</h4>
+                    <a href="jobs.html">Browse Jobs</a>
+                    <a href="#">Career Advice</a>
+                    <a href="#">Create Profile</a>
+                    <a href="#">Salary Guide</a>
                 </div>
                 <div class="footer-col">
-                    <h4>សម្រាប់និយោជក</h4>
-                    <a href="#">បង្ហោះការងារ</a>
-                    <a href="#">រុករកបេក្ខជន</a>
-                    <a href="#">គម្រោងតម្លៃ</a>
-                    <a href="#">មជ្ឈមណ្ឌលនិយោជក</a>
+                    <h4>For Employers</h4>
+                    <a href="#">Post a Job</a>
+                    <a href="#">Browse Candidates</a>
+                    <a href="#">Pricing Plans</a>
+                    <a href="#">Employer Center</a>
                 </div>
                 <div class="footer-col">
-                    <h4>ក្រុមហ៊ុន</h4>
-                    <a href="#">អំពីយើង</a>
-                    <a href="contact.html">ទំនាក់ទំនង</a>
-                    <a href="#">គោលការណ៍ភាពឯកជន</a>
-                    <a href="#">លក្ខខណ្ឌសេវាកម្ម</a>
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; ២០២៦ JobKH។ រក្សាសិទ្ធិគ្រប់យ៉ាង។ បង្កើតដោយ ❤️ នៅកម្ពុជា។
+                &copy; 2026 JobKH. All rights reserved. Ravi ❤️ Admin JobKH
             </div>
         </div>
     </footer>
@@ -281,9 +280,9 @@
     <div class="popup-overlay" id="post-success-popup">
         <div class="popup">
             <div class="icon"><i class="fas fa-check"></i></div>
-            <h3>ការងារត្រូវបានបង្ហោះដោយជោគជ័យ!</h3>
-            <p>ការងាររបស់អ្នកត្រូវបានបង្ហោះនិងអាចមើលឃើញជាសាធារណៈ។</p>
-            <button class="btn-close-popup" onclick="closePostPopup()">យល់ហើយ!</button>
+            <h3>Job Posted Successfully!</h3>
+            <p>Your job post has been published and is now visible to everyone.</p>
+            <button class="btn-close-popup" onclick="closePostPopup()">Got it!</button>
         </div>
     </div>
 

@@ -43,7 +43,7 @@ const Auth = {
         const users = this.getUsers();
         // Check if username exists
         if (users.some(u => u.username === user.username)) {
-            return { success: false, message: 'ឈ្មោះអ្នកប្រើប្រាស់មានរួចហើយ' }; // Username exists
+            return { success: false, message: 'Username already exists' }; // Username exists
         }
         users.push(user);
         localStorage.setItem(AUTH_USERS_KEY, JSON.stringify(users));
@@ -75,7 +75,7 @@ const Auth = {
             this.updateNavbar();
             return { success: true, user: session };
         }
-        return { success: false, message: 'ឈ្មោះអ្នកប្រើប្រាស់ ឬពាក្យសម្ងាត់មិនត្រឹមត្រូវ' }; // Invalid credentials
+        return { success: false, message: 'Invalid username or password' }; // Invalid credentials
     },
 
     // Logout
@@ -122,7 +122,7 @@ const Auth = {
             const logoutLink = document.createElement('a');
             logoutLink.href = '#';
             logoutLink.className = 'auth-btn-nav logout';
-            logoutLink.innerHTML = '<i class="fas fa-sign-out-alt"></i> ចាកចេញ'; // Logout
+            logoutLink.innerHTML = '<i class="fas fa-sign-out-alt"></i> Logout'; // Logout
             logoutLink.onclick = (e) => {
                 e.preventDefault();
                 this.logout();
@@ -145,7 +145,7 @@ const Auth = {
             const loginLink = document.createElement('a');
             loginLink.href = 'login.html';
             loginLink.className = 'auth-btn-nav login';
-            loginLink.innerHTML = '<i class="fas fa-sign-in-alt"></i> ចូលគណនី'; // Login
+            loginLink.innerHTML = '<i class="fas fa-sign-in-alt"></i> Login'; // Login
             navLinks.appendChild(loginLink);
         }
     }

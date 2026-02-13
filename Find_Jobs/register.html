@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="en">
 
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1281692154212689"
         crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&#6023;&#6084;&#6020;&#6040;&#6098;&#6048;&#6084;&#6072;&#6035; &#8211; JobKH</title>
+    <title>Register – JobKH</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/auth.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,12 +24,10 @@
                 <span>JobKH</span>
             </a>
             <div class="nav-links">
-                <a href="index.html">&#6033;&#6086;&#6038;&#6096;&#6042;&#6026;&#6078;&#6040;</a>
-                <a
-                    href="jobs.html">&#6047;&#6098;&#6044;&#6082;&#6020;&#6042;&#6016;&#6016;&#6070;&#6042;&#6020;&#6070;&#6042;</a>
-                <a
-                    href="post-job.html">&#6036;&#6020;&#6098;&#6048;&#6084;&#6087;&#6016;&#6070;&#6042;&#6020;&#6070;&#6042;</a>
-                <a href="contact.html">&#6033;&#6086;&#6035;&#6070;&#6016;&#6091;&#6033;&#6086;&#6035;&#6020;</a>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Find Jobs</a>
+                <a href="post-job.html">Post a Job</a>
+                <a href="contact.html">Contact</a>
             </div>
             <button class="hamburger"><span></span><span></span><span></span></button>
         </div>
@@ -39,30 +37,30 @@
     <section class="auth-layout">
         <div class="auth-card">
             <div class="auth-header">
-                <h1>បង្កើតគណនី</h1>
-                <p>ដើម្បីបង្កើតគណនី សូមបញ្ចូលព័ត៌មានខាងក្រោម</p>
+                <h1>Create Account</h1>
+                <p>To create an account, please enter the information below</p>
             </div>
 
             <div class="error-message" id="register-error"></div>
 
             <form class="auth-form" id="register-form">
                 <div class="form-group">
-                    <label>អ្នកបានបញ្ចូលអ៊ីមែល</label>
-                    <input type="text" id="reg-username" placeholder="បញ្ចូលអ៊ីមែល" required minlength="3">
+                    <label>Email Address</label>
+                    <input type="text" id="reg-username" placeholder="Enter email" required minlength="3">
                 </div>
                 <div class="form-group">
-                    <label>បញ្ចូលពាក្យសម្ងាត់</label>
-                    <input type="password" id="reg-password" placeholder="បញ្ចូលពាក្យសម្ងាត់" required minlength="4">
+                    <label>Password</label>
+                    <input type="password" id="reg-password" placeholder="Enter password" required minlength="4">
                 </div>
                 <div class="form-group">
-                    <label>បញ្ចូលពាក្យសម្ងាត់ម្ដងទៀត</label>
-                    <input type="password" id="reg-confirm-password" placeholder="បញ្ចូលពាក្យសម្ងាត់ម្ដងទៀត" required>
+                    <label>Confirm Password</label>
+                    <input type="password" id="reg-confirm-password" placeholder="Confirm password" required>
                 </div>
-                <button type="submit" class="btn-auth">បង្កើតគណនី</button>
+                <button type="submit" class="btn-auth">Create Account</button>
             </form>
 
             <div class="auth-footer">
-                <p>មានគណនីរួចរាល់? <a href="login.html">ចុះឈ្មោះ</a></p>
+                <p>Already have an account? <a href="login.html">Login</a></p>
             </div>
         </div>
     </section>
@@ -99,7 +97,7 @@
                 const cp = document.getElementById('reg-confirm-password').value.trim();
 
                 if (p !== cp) {
-                    errorMsg.textContent = '&#6038;&#6070;&#6016;&#6091;&#6050;&#6047;&#6081;&#6048;&#6090;&#6070;&#6033;&#6091;&#6041;&#6070;&#6035;&#6016;&#6098;&#6042;&#6016;&#6098;&#6042;&#6021;&#6031;&#6091;&#6016;&#6020;&#6084;&#6042;&#6070;&#6016;&#6091;&#6050;'; // Passwords do not match
+                    errorMsg.textContent = 'Passwords do not match'; // Passwords do not match
                     errorMsg.style.display = 'block';
                     return;
                 }

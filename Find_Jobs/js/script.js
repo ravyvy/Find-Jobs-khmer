@@ -2,25 +2,25 @@
 
 // Khmer UI Labels
 const UI = {
-  viewDetails: "\u1798\u17BE\u179B\u1796\u17D0\u178F\u17CC\u1798\u17B6\u1793",
-  applyNow: "\u178A\u17B6\u1780\u17CB\u1796\u17B6\u1780\u17D2\u1799\u17A5\u17B8\u179B\u17BC\u179C",
-  saveJob: "\u179A\u1780\u17D2\u179F\u17B6\u1791\u17BB\u1780\u1780\u17B6\u179A\u1784\u17B6\u179A",
-  perMonth: "/\u1781\u17C2",
-  jobsFound: "\u1780\u17B6\u179A\u1784\u17B6\u179A\u178F\u17D2\u179A\u17BC\u179C\u1794\u17B6\u1793\u179A\u1780\u1783\u17BE\u1789",
-  noJobs: "\u179A\u1780\u1798\u17B7\u1793\u1783\u17BE\u1789\u1780\u17B6\u179A\u1784\u17B6\u179A",
-  noJobsMsg: "\u179F\u17B6\u1780\u179B\u17D2\u1794\u1784\u1780\u17C2\u178F\u1798\u17D2\u179A\u1784",
-  jobNotFound: "\u179A\u1780\u1798\u17B7\u1793\u1783\u17BE\u1789\u1780\u17B6\u179A\u1784\u17B6\u179A",
-  browseAll: "\u179A\u17BB\u179A\u1780\u1780\u17B6\u179A\u1784\u17B6\u179A\u1791\u17B6\u17C6\u1784\u17A2\u179F\u17CB",
-  jobDesc: "\u1780\u17B6\u179A\u1796\u17B7\u1796\u178E\u17CC\u1793\u17B6\u1780\u17B6\u179A\u1784\u17B6\u179A",
-  requirements: "\u178F\u1798\u17D2\u179A\u17BC\u179C\u1780\u17B6\u179A",
-  benefits: "\u17A2\u178F\u17D2\u1790\u1794\u17D2\u179A\u1799\u17C4\u1787\u1793\u17CD",
-  companyInfo: "\u1791\u17B7\u178A\u17D2\u178B\u1797\u17B6\u1796\u1791\u17BC\u1791\u17C5\u1780\u17D2\u179A\u17BB\u1798\u17A0\u17CA\u17BB\u1793",
-  jobOverview: "\u1791\u17B7\u178A\u17D2\u178B\u1797\u17B6\u1796\u1791\u17BC\u1791\u17C5\u1780\u17B6\u179A\u1784\u17B6\u179A",
-  jobType: "\u1794\u17D2\u179A\u1797\u17C1\u1791\u1780\u17B6\u179A\u1784\u17B6\u179A",
-  location: "\u1791\u17B8\u178F\u17B6\u17C6\u1784",
-  expLabel: "\u1794\u1791\u1796\u17B7\u179F\u17C4\u1792\u1793\u17CD",
-  category: "\u1794\u17D2\u179A\u1797\u17C1\u1791",
-  posted: "\u1794\u17B6\u1793\u1794\u17D2\u179A\u1780\u17B6\u179F"
+  viewDetails: "View Details",
+  applyNow: "Apply Now",
+  saveJob: "Save Job",
+  perMonth: "/month",
+  jobsFound: "jobs found",
+  noJobs: "No jobs found",
+  noJobsMsg: "Try adjusting your filters",
+  jobNotFound: "Job Not Found",
+  browseAll: "Browse All Jobs",
+  jobDesc: "Job Description",
+  requirements: "Requirements",
+  benefits: "Benefits",
+  companyInfo: "Company Overview",
+  jobOverview: "Job Overview",
+  jobType: "Job Type",
+  location: "Location",
+  expLabel: "Experience",
+  category: "Category",
+  posted: "Posted"
 };
 
 const jobsData = [

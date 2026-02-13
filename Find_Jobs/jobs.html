@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="en">
 
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1281692154212689"
         crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="រុករកការងារទាំងអស់នៅលើ JobKH។ ច្រោះតាមប្រភេទ ទីតាំង ប្រាក់ខែ និងប្រភេទការងារ។">
-    <title>រុករកការងារ – JobKH</title>
+    <meta name="description" content="Browse all jobs on JobKH. Filter by category, location, salary, and job type.">
+    <title>Browse Jobs – JobKH</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -26,16 +26,16 @@
                 <span>JobKH</span>
             </a>
             <div class="nav-links">
-                <a href="index.html">ទំព័រដើម</a>
-                <a href="jobs.html" class="active">ស្វែងរកការងារ</a>
-                <a href="job-detail.html?id=1">ព័ត៌មានការងារ</a>
-                <a href="post-job.html">បង្ហោះការងារ</a>
-                <a href="contact.html">ទំនាក់ទំនង</a>
+                <a href="index.html">Home</a>
+                <a href="jobs.html" class="active">Find Jobs</a>
+                <a href="job-detail.html?id=1">Job Info</a>
+                <a href="post-job.html">Post a Job</a>
+                <a href="contact.html">Contact</a>
                 <div class="nav-cta">
-                    <a href="jobs.html">បង្ហោះការងារ</a>
+                    <a href="jobs.html">Post a Job</a>
                 </div>
             </div>
-            <button class="hamburger" aria-label="បើកម៉ឺនុយ">
+            <button class="hamburger" aria-label="Open Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -47,12 +47,12 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>ស្វែងរកការងារដ៏ល្អឥតខ្ចោះរបស់អ្នក</h1>
-            <p>រុករកឱកាសរាប់រយនៅទូទាំងប្រទេសកម្ពុជា</p>
+            <h1>Find Your Perfect Job</h1>
+            <p>Explore hundreds of opportunities across Cambodia</p>
             <div class="breadcrumb">
-                <a href="index.html"><i class="fas fa-home"></i> ទំព័រដើម</a>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
                 <span>/</span>
-                <span>ការងារ</span>
+                <span>Jobs</span>
             </div>
         </div>
     </section>
@@ -64,67 +64,67 @@
                 <!-- Sidebar Filters -->
                 <aside class="sidebar">
                     <div class="filter-card">
-                        <h3><i class="fas fa-sliders-h"></i> តម្រង</h3>
+                        <h3><i class="fas fa-sliders-h"></i> Filters</h3>
 
                         <div class="filter-group">
-                            <label>ប្រភេទការងារ</label>
+                            <label>Job Category</label>
                             <select id="filter-category">
-                                <option value="">គ្រប់ប្រភេទ</option>
-                                <option value="IT & Software">ព័ត៌មានវិទ្យា & កម្មវិធី</option>
-                                <option value="Marketing">ទីផ្សារ</option>
-                                <option value="Accounting">គណនេយ្យ</option>
-                                <option value="Banking">ធនាគារ</option>
-                                <option value="Design">ការរចនា</option>
-                                <option value="Engineering">វិស្វកម្ម</option>
+                                <option value="">All Categories</option>
+                                <option value="IT & Software">IT & Software</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="Banking">Banking</option>
+                                <option value="Design">Design</option>
+                                <option value="Engineering">Engineering</option>
                             </select>
                         </div>
 
                         <div class="filter-group">
-                            <label>ទីតាំង</label>
+                            <label>Location</label>
                             <select id="filter-location">
-                                <option value="">គ្រប់ទីកន្លែង</option>
-                                <option value="Phnom Penh">ភ្នំពេញ</option>
-                                <option value="Siem Reap">សៀមរាប</option>
-                                <option value="Sihanoukville">ព្រះសីហនុ</option>
-                                <option value="Battambang">បាត់ដំបង</option>
+                                <option value="">Everywhere</option>
+                                <option value="Phnom Penh">Phnom Penh</option>
+                                <option value="Siem Reap">Siem Reap</option>
+                                <option value="Sihanoukville">Sihanoukville</option>
+                                <option value="Battambang">Battambang</option>
                             </select>
                         </div>
 
                         <div class="filter-group">
-                            <label>ប្រាក់ខែអប្បបរមា ($/ខែ)</label>
-                            <input type="number" id="filter-salary" placeholder="ឧ. 1000" min="0">
+                            <label>Min Salary ($/month)</label>
+                            <input type="number" id="filter-salary" placeholder="e.g. 1000" min="0">
                         </div>
 
                         <div class="filter-group">
-                            <label>ប្រភេទការងារ</label>
+                            <label>Job Type</label>
                             <div class="checkbox-group">
                                 <label class="checkbox-item">
-                                    <input type="checkbox" class="job-type-check" value="Full-time"> ពេញម៉ោង
+                                    <input type="checkbox" class="job-type-check" value="Full-time"> Full-time
                                 </label>
                                 <label class="checkbox-item">
-                                    <input type="checkbox" class="job-type-check" value="Part-time"> ក្រៅម៉ោង
+                                    <input type="checkbox" class="job-type-check" value="Part-time"> Part-time
                                 </label>
                                 <label class="checkbox-item">
-                                    <input type="checkbox" class="job-type-check" value="Contract"> កិច្ចសន្យា
+                                    <input type="checkbox" class="job-type-check" value="Contract"> Contract
                                 </label>
                             </div>
                         </div>
 
                         <div class="filter-group">
-                            <label>កម្រិតបទពិសោធន៍</label>
+                            <label>Experience Level</label>
                             <select id="filter-experience">
-                                <option value="">គ្រប់កម្រិត</option>
-                                <option value="Entry-level">កម្រិតចំណូល</option>
-                                <option value="Mid-level">កម្រិតមធ្យម</option>
-                                <option value="Senior">កម្រិតជាន់ខ្ពស់</option>
+                                <option value="">All Levels</option>
+                                <option value="Entry-level">Entry-level</option>
+                                <option value="Mid-level">Mid-level</option>
+                                <option value="Senior">Senior</option>
                             </select>
                         </div>
 
                         <button class="btn-filter" id="btn-filter">
-                            <i class="fas fa-filter"></i> អនុវត្តតម្រង
+                            <i class="fas fa-filter"></i> Apply Filters
                         </button>
                         <button class="btn-reset" id="btn-reset">
-                            <i class="fas fa-undo"></i> កំណត់ឡើងវិញ
+                            <i class="fas fa-undo"></i> Reset Filters
                         </button>
                     </div>
                 </aside>
@@ -133,14 +133,14 @@
                 <div class="jobs-content">
                     <div class="listing-header">
                         <div>
-                            <h2>ការងារដែលមាន</h2>
-                            <span class="result-count" id="result-count">០ ការងារត្រូវបានរកឃើញ</span>
+                            <h2>Available Jobs</h2>
+                            <span class="result-count" id="result-count">0 jobs found</span>
                         </div>
                         <div class="sort-by">
                             <select>
-                                <option>តម្រៀបតាម: ថ្មីបំផុត</option>
-                                <option>តម្រៀបតាម: ប្រាក់ខែ (ខ្ពស់)</option>
-                                <option>តម្រៀបតាម: ប្រាក់ខែ (ទាប)</option>
+                                <option>Sort by: Newest</option>
+                                <option>Sort by: Salary (High)</option>
+                                <option>Sort by: Salary (Low)</option>
                             </select>
                         </div>
                     </div>
@@ -182,7 +182,8 @@
                         <div class="logo-icon">JK</div>
                         <span>JobKH</span>
                     </a>
-                    <p>វេទិកាការងារកំពូលនៅកម្ពុជា ភ្ជាប់អ្នកជំនាញមានទេពកោសល្យជាមួយនិយោជកល្បីទូទាំងព្រះរាជាណាចក្រ។</p>
+                    <p>Top job platform in Cambodia, connecting talented professionals with top employers across the
+                        Kingdom.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -191,35 +192,35 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>សម្រាប់អ្នកស្វែងរកការងារ</h4>
-                    <a href="jobs.html">រុករកការងារ</a>
-                    <a href="#">ដំបូន្មានអាជីព</a>
-                    <a href="#">បង្កើតប្រវត្តិរូប</a>
-                    <a href="#">មគ្គុទ្ទេសក៍ប្រាក់ខែ</a>
+                    <h4>For Job Seekers</h4>
+                    <a href="jobs.html">Browse Jobs</a>
+                    <a href="#">Career Advice</a>
+                    <a href="#">Create Profile</a>
+                    <a href="#">Salary Guide</a>
                 </div>
                 <div class="footer-col">
-                    <h4>សម្រាប់និយោជក</h4>
-                    <a href="#">បង្ហោះការងារ</a>
-                    <a href="#">រុករកបេក្ខជន</a>
-                    <a href="#">គម្រោងតម្លៃ</a>
-                    <a href="#">មជ្ឈមណ្ឌលនិយោជក</a>
+                    <h4>For Employers</h4>
+                    <a href="#">Post a Job</a>
+                    <a href="#">Browse Candidates</a>
+                    <a href="#">Pricing Plans</a>
+                    <a href="#">Employer Center</a>
                 </div>
                 <div class="footer-col">
-                    <h4>ក្រុមហ៊ុន</h4>
-                    <a href="#">អំពីយើង</a>
-                    <a href="contact.html">ទំនាក់ទំនង</a>
-                    <a href="#">គោលការណ៍ភាពឯកជន</a>
-                    <a href="#">លក្ខខណ្ឌសេវាកម្ម</a>
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; ២០២៦ JobKH។ រក្សាសិទ្ធិគ្រប់យ៉ាង។ បង្កើតដោយ ❤️ នៅកម្ពុជា។
+                &copy; 2026 JobKH. All rights reserved. Ravi ❤️ Admin JobKH
             </div>
         </div>
     </footer>
 
     <!-- Scroll to Top -->
-    <button class="scroll-top" aria-label="រមូឡើងលើ">
+    <button class="scroll-top" aria-label="Scroll to Top">
         <i class="fas fa-chevron-up"></i>
     </button>
 
