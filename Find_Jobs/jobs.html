@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4T5LFPYZX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-V4T5LFPYZX');
+    </script>
+    
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MX4R5C5L');</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all jobs on JobKH. Filter by category, location, salary, and job type.">
+    <title>Browse Jobs – JobKH</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Khmer:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX4R5C5L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">JK</div>
+                <span>JobKH</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html" class="active">Find Jobs</a>
+                <a href="job-detail.html?id=1">Job Info</a>
+                <a href="post-job.html">Post a Job</a>
+                <a href="contact.html">Contact</a>
+                <div class="nav-cta">
+                    <a href="jobs.html">Post a Job</a>
+                </div>
+            </div>
+            <button class="hamburger" aria-label="Open Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-overlay"></div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Find Your Perfect Job</h1>
+            <p>Explore hundreds of opportunities across Cambodia</p>
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span>/</span>
+                <span>Jobs</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="jobs-page-layout">
+                <aside class="sidebar">
+                    <div class="filter-card">
+                        <h3><i class="fas fa-sliders-h"></i> Filters</h3>
+                        <div class="filter-group">
+                            <label>Job Category</label>
+                            <select id="filter-category">
+                                <option value="">All Categories</option>
+                                <option value="IT & Software">IT & Software</option>
+                                <option value="Marketing">Marketing</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Location</label>
+                            <select id="filter-location">
+                                <option value="">Everywhere</option>
+                                <option value="Phnom Penh">Phnom Penh</option>
+                                <option value="Siem Reap">Siem Reap</option>
+                            </select>
+                        </div>
+
+                        <button class="btn-filter" id="btn-filter"><i class="fas fa-filter"></i> Apply Filters</button>
+                        <button class="btn-reset" id="btn-reset" style="margin-top: 10px;"><i class="fas fa-undo"></i> Reset</button>
+                    </div>
+
+                    <div class="sidebar-ad-container" style="position: sticky; top: 100px; margin-top: 20px;">
+                        <div style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                            <span style="font-size: 10px; color: #bbb; display: block; margin-bottom: 8px; text-transform: uppercase;">Advertisement</span>
+                            <script async="async" data-cfasync="false" src="https://pl28782361.effectivegatecpm.com/c2/e2/02/c2e202def263449d4b08c48d9807b173.js"></script>
+                            <div id="container-6fa80d6cc840d2421eaffad70612c5d8"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="jobs-content">
+                    <div class="listing-header">
+                        <div>
+                            <h2>Available Jobs</h2>
+                            <span class="result-count" id="result-count">0 jobs found</span>
+                        </div>
+                        <div class="sort-by">
+                            <select>
+                                <option>Sort by: Newest</option>
+                                <option>Sort by: Salary (High)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="jobs-grid-list" id="jobs-listing">
+                        </div>
+
+                    <div class="in-feed-ad" style="margin: 30px 0; background: #fdfdfd; border: 1px solid #f0f0f0; border-radius: 12px; padding: 20px; text-align: center;">
+                         <span style="font-size: 11px; color: #ccc; margin-bottom: 10px; display: block;">SPONSORED</span>
+                         <script async="async" data-cfasync="false" src="https://pl28782706.effectivegatecpm.com/6fa80d6cc840d2421eaffad70612c5d8/invoke.js"></script>
+                         <div id="google-ads-display"></div>
+                    </div>
+
+                    <div class="pagination" id="pagination">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">JK</div>
+                        <span>JobKH</span>
+                    </a>
+                    <p>Top job platform in Cambodia, connecting talent with top employers.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 JobKH. All rights reserved. Ravi ❤️ Admin JobKH
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to Top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
